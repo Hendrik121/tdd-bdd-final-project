@@ -29,15 +29,15 @@ class ProductFactory(factory.Factory):
         """Maps factory to data model"""
 
         model = Product
-    #UNKNOWN = 0
-    #CLOTHS = 1
-    #FOOD = 2
-    #HOUSEWARES = 3
-    #AUTOMOTIVE = 4
-    #TOOLS = 5
+    # UNKNOWN = 0
+    # CLOTHS = 1
+    # FOOD = 2
+    # HOUSEWARES = 3
+    # AUTOMOTIVE = 4
+    # TOOLS = 5
     id = factory.Sequence(lambda n: n)
     name = FuzzyChoice(
-        choices = [
+        choices=[
             'Socks',
             'Hat',
             'Apple',
